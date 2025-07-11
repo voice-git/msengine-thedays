@@ -1,0 +1,422 @@
+@charset "utf-8";
+$color_basetext: #2B2B2B;
+
+.top_area{
+	width: 100%;
+	height: 395px;
+	position: relative;
+	background-image: url(../img_form/top_entry.jpg);
+	background-size: cover;
+	background-position: center center;
+	@media screen and (max-width: 559px){
+		height: 330px;
+		background-image: url(../img_form/top_entry_sp.jpg);
+		background-size: cover;
+		background-position: center center;
+	}
+	&.contact{
+		background-image: url(../img_form/top_contact.jpg);
+		background-size: cover;
+		background-position: center center;
+		@media screen and (max-width: 559px){
+			background-image: url(../img_form/top_contact_sp.jpg);
+			background-size: cover;
+			background-position: center center;
+		}
+		.topwrap{
+			.title{
+				font-size: 4rem;
+				margin-bottom: auto;
+			}
+		}
+	}
+	.topwrap{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: #fff;
+		.title{
+			font-size: 1.4rem;
+			font-weight: bold;
+			margin: auto;
+			margin-bottom: 0;
+		}
+		.sub{
+			font-size: 4rem;
+			margin: auto;
+			margin-top: 10px;
+		}
+	}
+}
+.step_area{
+	width: 740px;
+	margin: 90px auto 0;
+	@media screen and (max-width: 830px){
+		width: 90%;
+	}
+	&.wpcf7c-elm-step2{
+		.stepwrap{
+			.step{
+				&:first-child{
+					color: #6A6A6A;
+				}
+				&:nth-child(3){
+					color: #D10000;
+				}
+			}
+		}
+	}
+	&.comp{
+		.stepwrap{
+			.step{
+				&:first-child{
+					color: #6A6A6A;
+				}
+				&:nth-child(3){
+					color: #6A6A6A;
+				}
+				&:last-child{
+					color: #D10000;
+				}
+			}
+		}
+	}
+	.stepwrap{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		.arrow{
+			margin: 0 auto;
+		}
+		.step{
+			display: flex;
+			flex-direction: column;
+			color: #6A6A6A;
+			&:first-child{
+				color: #D10000;
+				margin-left: 40px;
+				@media screen and (max-width: 830px){
+					margin-left: 0;
+				}
+			}
+			&:last-child{
+				margin-right: 40px;
+				@media screen and (max-width: 830px){
+					margin-right: 0;
+				}
+			}
+			.text01{
+				font-size: 1.8rem;
+				margin: auto;
+				margin-bottom: 0;
+				span{
+					font-size: 2.8rem;
+					display: inline-block;
+					margin-left: 5px;
+				}
+			}
+			.text02{
+				font-size: 2.2rem;
+				font-weight: bold;
+				margin: auto;
+				margin-top: 10px;
+				@media screen and (max-width: 830px){
+					font-size: 1.6rem;
+				}
+			}
+		}
+	}
+}
+
+.form_area{
+	width: 740px;
+	margin: 100px auto 0;
+	@media screen and (max-width: 830px){
+		width: 90%;
+	}
+	.subtext{
+		font-size: 1.8rem;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.8;
+		@media screen and (max-width: 830px){
+			font-size: 1.4rem;
+		}
+		.icon:before{
+			content: "";
+			width: 48px;
+			height: 21px;
+			background-image: url(../img_form/icon_hissu.svg);
+			background-size: cover;
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 5px 5px 10px;
+		}
+	}
+	.subtext02{
+		font-size: 1.4rem;
+		font-weight: bold;
+		line-height: 1.8;
+		@media screen and (max-width: 830px){
+			margin-top: 50px;
+			text-align: center;
+		}
+	}
+	&.contact .form_table{
+		tr{
+			td{
+				width: 65%;
+				@media screen and (max-width: 830px){
+					width: 100%;
+					display: block;
+					padding: 0 0 50px;
+					font-size: 1.6rem;
+					&:first-child{
+						padding-bottom: 5px;
+					}
+				}
+				&:first-child{
+					width: 35%;
+					@media screen and (max-width: 830px){
+						width: 100%;
+						padding-bottom: 10px;
+					}
+				}
+			}
+		}
+	}
+	.form_table{
+		width: 100%;
+		margin: 100px auto 0;
+		border-collapse: collapse;
+		@media screen and (max-width: 830px){
+			display: block;
+			tbody{
+				display: block;
+			}
+		}
+		@media screen and (max-width: 830px){
+			margin-top: 80px;
+		}
+	
+		tr{
+			@media screen and (max-width: 830px){
+				display: block;
+			}
+			td{
+				width: 70%;
+				font-size: 1.8rem;
+				font-weight: bold;
+				padding: 20px 0;
+				vertical-align: top;
+				@media screen and (max-width: 830px){
+					width: 100%;
+					display: block;
+					padding: 0 0 50px;
+					font-size: 1.6rem;
+					&:first-child{
+						padding-bottom: 5px;
+					}
+				}
+				&.hissu:before{
+					content: "";
+					width: 70px;
+					height: 30px;
+					background-image: url(../img_form/icon_hissu.svg);
+					background-size: cover;
+					display: inline-block;
+					margin-right: 15px;
+					@media screen and (max-width: 830px){
+						width: 48px;
+						height: 21px;
+						vertical-align: middle;
+						margin-bottom: 5px;
+						margin-right: 10px;
+					}
+				}
+				&:first-child{
+					width: 30%;
+					line-height: 1.5;
+					@media screen and (max-width: 830px){
+						width: 100%;
+						padding-bottom: 10px;
+					}
+				}
+				input[type="text"],input[type="tel"],input[type="email"],textarea,select{
+					width: 100%;
+					font-size: 1.8rem;
+					padding: 10px 15px;
+					background-color: #F5F5F5;
+					border-radius: 0;
+					box-sizing: border-box;
+					border: none;
+					outline: none;
+					@media screen and (max-width: 830px){
+						width: 100%;
+					}
+					&.wpcf7c-conf{
+						height: auto;
+						-moz-appearance: none;
+						-webkit-appearance: none;
+						appearance: none;
+						background: transparent;
+					}
+				}
+				input[name="your-other"]{
+					width: 50%;
+					padding: 5px 15px;
+					display: none;
+				}
+				&.address{
+					vertical-align: middle;
+					.your-zipcode{
+						margin-left: 15px;
+						input{
+							width: 200px;
+						}
+					}
+					.your-address{
+						display: block;
+						margin-top: 15px;
+					}
+				}
+				select{
+					height: 30px;
+					background-color: #fff;
+				}
+				&.yubin{
+					span:first-child,span:nth-child(2){
+						input{
+							width: 200px;
+						}
+					}
+					span:last-child{
+						display: block;
+						margin-top: 10px;
+					}
+				}
+				.wpcf7-list-item{
+					display: block;
+					margin-left: 0;
+					margin-bottom: 15px;
+				}
+				.wpcf7-list-item-label{
+					color: $color_basetext;
+				}
+				.example{
+					line-height: 1.5;
+					color: $color_basetext;
+					margin-top: 5px;
+					opacity: 0.5;
+				}
+				.privacybox{
+					width: 100%;
+					height: 180px;
+					overflow-y: scroll;
+					background-color: #e7f5ed;
+					padding: 10px 15px;
+					p{
+						font-size: 1rem;
+						letter-spacing: 0.1em;
+						line-height: 1.8;
+						color: #777777;
+					}
+				}
+				.pcheck{
+					.wpcf7-list-item{
+						display: inline;
+						margin-bottom: 0;
+						margin-right: 5px;
+					}
+				}
+				.cap{
+					font-size: 1.4rem;
+					font-weight: bold;
+					line-height: 1.4;
+					margin-top: 10px;
+					@media screen and (max-width: 830px){
+						font-size: 1.3rem;
+					}
+				}
+			}
+		}
+	}
+}
+.btn_wrap{
+	width: 272px;
+	margin: 100px auto 0;
+	display: flex;
+	align-items: center;
+	&.wpcf7c-elm-step2{
+		width: 545px;
+	}
+	@media screen and (max-width: 830px){
+		margin: 30px auto 0;
+	}
+	input[type="submit"]{
+		font-size: 1.8rem;
+		font-weight: bold;
+		letter-spacing: 0.05em;
+		color: #fff;
+		width: 272px;
+		height: 62px;
+		background: transparent;
+		background-image: url(../img_form/submitbtn.svg);
+		background-repeat: no-repeat;
+		cursor: pointer;
+		&:hover{
+			opacity: 0.7;
+		}
+	}
+	input[type="button"]{
+		font-size: 1.8rem;
+		font-weight: bold;
+		letter-spacing: 0.05em;
+		color: #fff;
+		width: 272px;
+		height: 62px;
+		background: transparent;
+		background-image: url(../img_form/backbtn.svg);
+		background-repeat: no-repeat;
+		cursor: pointer;
+		text-indent: -9999px;
+		&:hover{
+			opacity: 0.7;
+		}
+	}
+}
+
+.formcontact{
+	display: block;
+	margin: 100px auto 0;
+	@media screen and (max-width: 830px){
+		width: 90%;
+		margin-top: 80px;
+	}
+}
+
+.thanks{
+	font-size: 2.2rem;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.8;
+	margin: 160px 0 250px;
+	@media screen and (max-width: 830px){
+		font-size: 1.4rem;
+		margin: 70px 0 140px;
+	}
+}
+
+.form_footer{
+	width: 100%;
+	margin: 200px 0 90px;
+	@media screen and (max-width: 830px){
+		margin-top: 120px;
+	}
+	.copyright{
+		font-size: 1rem;
+		text-align: center;
+	}
+}

@@ -1,0 +1,84 @@
+.navpc, .navsp {
+  display: block;
+}
+
+.fixbtn {
+  display: block;
+}
+
+.memorydetail {
+  background-color: #DDDDDD;
+  padding: 140px 0 60px;
+}
+
+@media screen and (max-width: 559px) {
+  .memorydetail {
+    padding-top: 120px;
+  }
+}
+
+.memorydetail .detailwrap {
+  width: 1020px;
+  margin: 0 auto 0;
+  display: flex;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 1020px) {
+  .memorydetail .detailwrap {
+    width: 100%;
+    display: block;
+  }
+}
+
+.memorydetail .detailwrap .imgwrap {
+  width: 460px;
+  display: block;
+}
+
+@media screen and (max-width: 559px) {
+  .memorydetail .detailwrap .imgwrap {
+    width: 100%;
+  }
+}
+
+.memorydetail .detailwrap .imgwrap:after {
+  content: "";
+  height: 0;
+  padding-top: 100%;
+  display: block;
+}
+
+.memorydetail .detailwrap .textwrap {
+  width: 450px;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 559px) {
+  .memorydetail .detailwrap .textwrap {
+    width: 90%;
+    margin-top: 30px;
+    margin-right: auto;
+  }
+}
+
+.memorydetail .detailwrap .textwrap .date {
+  font-size: 1.2rem;
+}
+
+.memorydetail .detailwrap .textwrap .content {
+  font-size: 1.6rem;
+  line-height: 2.4;
+  text-align: justify;
+  margin-top: 30px;
+}
+
+.memorydetail .linkbtn {
+  margin-top: 90px;
+}
+
+.memorydetail .copyright {
+  text-align: center;
+}
+
+/*# sourceMappingURL=single.map */
